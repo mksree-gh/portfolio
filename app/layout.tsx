@@ -9,6 +9,9 @@ const jost = Jost({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Keerthi Sree Marrapu - Product Engineer',
   description: 'Product Engineer building AI and data-driven solutions',
+  icons: {
+    icon: '/profile-art.png',
+  },
 };
 
 export default function RootLayout({
