@@ -1,6 +1,8 @@
+// app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
+import { ThemeProvider } from "@/components/theme-provider"; // Import the new provider
 
 const jost = Jost({ subsets: ['latin'] });
 
@@ -15,8 +17,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={jost.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={jost.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
