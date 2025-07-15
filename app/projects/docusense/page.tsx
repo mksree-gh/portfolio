@@ -5,51 +5,54 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function DocuSensePage() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      {/* Back Navigation */}
-      <div className="pt-8 pb-4 px-6">
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Back Link Header */}
+      <div className="border-b border-border py-6 px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <Link 
-            href="/"
-            className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
+          <Link
+            href="/#projects"
+            className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Back
           </Link>
         </div>
       </div>
 
-      {/* Project Content */}
-      <div className="pb-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
+      {/* Main Content */}
+      <div className="py-12 px-4 md:px-6">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <header className="space-y-2">
+            <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
               DocuSense | PDF Management Tool
             </h1>
-            
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Built a PDF management tool for usage stats, duplicate detection (MD5 hashing), and OCR text extraction (PyPDF2).
+            <p className="text-muted-foreground max-w-2xl">
+              End-to-end document analytics and retrieval with clustering & semantic search.
+            </p>
+          </header>
+
+          <section className="space-y-8 border rounded-lg p-6 md:p-8 bg-card">
+            <ul className="space-y-6 list-none">
+              <li className="flex gap-4">
+                <div className="mt-2 w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+                <p className="leading-relaxed">
+                  Built a PDF management tool for usage stats, duplicate detection (MD5 hashing), and OCR text extraction using PyPDF2.
                 </p>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <p className="text-lg text-gray-700 leading-relaxed">
+              </li>
+              <li className="flex gap-4">
+                <div className="mt-2 w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+                <p className="leading-relaxed">
                   Used pandas & NLTK for data extraction and analysis; applied Scikit-learn K-Means clustering for PDF organization.
                 </p>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                <p className="text-lg text-gray-700 leading-relaxed">
+              </li>
+              <li className="flex gap-4">
+                <div className="mt-2 w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+                <p className="leading-relaxed">
                   Engineered a TF-IDF and cosine similarity-based search engine for content-based PDF retrieval; designed UI mockups.
                 </p>
-              </div>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>

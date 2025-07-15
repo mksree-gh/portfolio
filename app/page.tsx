@@ -112,7 +112,29 @@ const Navigation = () => {
 };
 
 // --- DATA ---
-const projectData = [ { title: "AI-Powered Multi-Agent Data Analysis Pipeline", description: "Designed and implemented a LangGraph-based multi-agent LLM pipeline to automate data analysis, reducing insight generation time from hours to minutes.", skills: "LangGraph, Multi-Agent LLMs, RAG", link: "/projects/ai-pipeline" }, { title: "AI Tool for Intellectual Humility (IH) Analysis", description: "Developed an LLM-based tool using Google Gemini Pro to identify Intellectual Humility traits in texts, validated on unseen stories and cross-lingual use cases.", skills: "Google Gemini, Few-Shot Learning, Streamlit", link: "/projects/ai-tool-humility" } ];
+const projectData = [ 
+  {
+    title: "AI-Powered Multi-Agent Data Analysis Pipeline",
+    description:
+      "Designed and implemented a LangGraph-based multi-agent LLM pipeline to automate data analysis, reducing insight generation time from hours to minutes.",
+    skills: "LangGraph, Multi-Agent LLMs, RAG",
+    link: "/projects/ai-pipeline",
+  },
+  {
+    title: "DocuSense | PDF Management Tool",
+    description:
+      "Built a full-featured PDF analysis tool with OCR, duplicate detection, clustering, and semantic search for document organization and retrieval.",
+    skills: "OCR, Pandas, TF-IDF, Scikit-learn",
+    link: "/projects/docusense",
+  },
+  {
+    title: "AI Tool for Intellectual Humility (IH) Analysis",
+    description:
+      "Developed an LLM-based tool using Google Gemini Pro to identify Intellectual Humility traits in texts, validated on unseen stories and cross-lingual use cases.",
+    skills: "Google Gemini, Few-Shot Learning, Streamlit",
+    link: "/projects/ai-tool-humility",
+  }
+];
 const conferenceData = {
     viva: ["/conferences/vivatech/vivatech-1.jpeg", "/conferences/vivatech/vivatech-2.jpeg", "/conferences/vivatech/vivatech-3.jpeg", "/conferences/vivatech/vivatech-4.jpeg"],
 
@@ -248,10 +270,31 @@ export default function HomePage() {
 
         {/* --- PROJECTS --- */}
         <section id="projects" className="py-24 px-6 w-full bg-gray-50 dark:bg-gray-900">
-            <div className="max-w-3xl mx-auto"><h2 className="text-3xl font-light text-center text-gray-900 dark:text-white mb-16">Projects</h2><div className="space-y-12">
-            {projectData.map(p => (<div key={p.title} className="border-b border-gray-200 dark:border-gray-700 pb-8"><Link href={p.link}><h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">{p.title}</h3></Link><p className="text-gray-700 dark:text-gray-300 leading-relaxed">{p.description}</p><p className="mt-4 text-sm"><span className="font-semibold text-gray-600 dark:text-gray-400">Skills:</span> {p.skills}</p></div>))}
-            </div></div>
-        </section>
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-light text-center text-gray-900 dark:text-white mb-16">Projects</h2>
+    <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {projectData.map((p) => (
+        <Link
+          key={p.title}
+          href={p.link}
+          className="block border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white/50 dark:bg-white/5 hover:shadow-lg transition-shadow hover:border-cyan-500 dark:hover:border-cyan-400"
+        >
+          <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4 transition-colors">
+            {p.title}
+          </h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            {p.description}
+          </p>
+          <p className="mt-4 text-sm">
+            <span className="font-semibold text-gray-600 dark:text-gray-400">Skills:</span> {p.skills}
+          </p>
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
         {/* --- CONFERENCES (Using your shadcn/ui Carousel) --- */}
         <section id="conferences" className="py-24 px-6 w-full">

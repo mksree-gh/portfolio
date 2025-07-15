@@ -45,31 +45,31 @@
     --radius: 0.5rem;
   }
   .dark {
-  /* Base shades - subtle separation */
-  --background: 0 0% 2%;               /* #050505 true black feel */
-  --foreground: 0 0% 95%;              /* #f2f2f2 off-white for easy reading */
+  /* Base shades - very subtle grayscale steps */
+  --background: 0 0% 2%;               /* #050505 true black */
+  --foreground: 0 0% 95%;              /* #f2f2f2 off-white */
 
-  --card: 0 0% 4.5%;                   /* #0b0b0b - very subtle step lighter than background */
+  --card: 0 0% 3.5%;                   /* #090909, barely lighter */
   --card-foreground: 0 0% 95%;
 
-  --popover: 0 0% 5%;                  /* slight separation for overlays */
+  --popover: 0 0% 4%;                  /* #0a0a0a */
   --popover-foreground: 0 0% 95%;
 
-  --primary: 0 0% 98%;                 /* pure white for main headings */
+  --primary: 0 0% 98%;                 /* white for big headings */
   --primary-foreground: 0 0% 0%;
 
-  --secondary: 0 0% 5.5%;              /* gentle difference for sections */
+  --secondary: 0 0% 4%;                /* subtle section break */
   --secondary-foreground: 0 0% 90%;
 
-  --muted: 0 0% 8%;                    /* just a bit lighter for muted blocks */
+  --muted: 0 0% 6%;                    /* a tiny bit lighter muted */
   --muted-foreground: 0 0% 65%;
 
-  /* Accent - Teal/Cyan to match your line art illustration */
-  --accent: 185 70% 45%;               /* slightly toned-down teal for better dark contrast */
+  /* Accent - still your cyan/teal for links etc. */
+  --accent: 185 70% 45%;               /* balanced teal to match illustration */
   --accent-foreground: 0 0% 100%;
 
-  --border: 0 0% 6%;
-  --input: 0 0% 8%;
+  --border: 0 0% 4%;
+  --input: 0 0% 5%;
 }
 }
 
