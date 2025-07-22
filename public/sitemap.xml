@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://mksree-gh.github.io/</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mksree-gh.github.io/experience/hushh</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mksree-gh.github.io/experience/ey</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mksree-gh.github.io/projects/ai-pipeline</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mksree-gh.github.io/projects/docusense</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mksree-gh.github.io/projects/ai-tool-humility</loc>
+  <lastmod>2025-07-22T05:59:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
